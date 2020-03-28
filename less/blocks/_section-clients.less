@@ -1,0 +1,105 @@
+.section-clients {
+    padding: 135px 0 160px;
+    background-color: #ffc155;
+}
+
+.section-clients__wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.section-clients__comment-card {
+    margin-bottom: 20px;
+}
+
+.section-clients__wrapper-title {
+    margin-bottom: 55px;
+}
+
+.section-clients__comment-card {
+    padding: 45px 30px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    width: calc(~"50% - 18px");
+}
+
+.section-clients__wrapper-img {
+    margin-right: 30px;
+    width: 125px;
+    height: 125px;
+    flex-basis: 100%;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.section-clients__img {
+    width: 100%;    
+    object-fit: cover;
+    object-position: center;
+}
+
+.section-clients__wrapper-text {
+    position: relative;
+    margin-bottom: 20px;
+
+    &::before {
+        position: absolute;
+        top: -3px;
+        left: -7px;
+        transform: translateX(-100%) scale(-1, 1);
+        width: 14px;
+        height: 14px;
+        content: "";
+        background-image: url(../img/section-clients/quote.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+
+    &::after {
+        position: absolute;
+        bottom: -3px;
+        right: 0;
+        transform: translateX(100%);
+        width: 14px;
+        height: 14px;
+        content: "";
+        background-image: url(../img/section-clients/quote.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+}
+
+.section-clients__text {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    line-height: 1.7;
+    color: #7b7b7b;
+}
+
+.section-clients__wrapper-name {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.section-clients__name {
+    margin: 0;
+    margin-right: 5px;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #f6772c;
+}
+
+.section-clients__post {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #99a9ae;
+}

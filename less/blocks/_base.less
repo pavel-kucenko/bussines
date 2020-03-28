@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container.container--relative {
+    position: relative;
+}
+
+.section-title {
+    margin: 0;
+    margin-bottom: 5px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 1;
+    text-align: center;
+    color: #394b50;
+    text-transform: uppercase;
+}
+
+.section-title.section-title--font-gotham {
+    font-family: 'Gotham', sans-serif;
+}
+
+.section-title.section-title--white {
+    color: #fff;
+}
+
+.section-subtitle {
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    color: #394b50;
+}
+
+.section-subtitle.section-subtitle--font-lato {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.section-subtitle.section-subtitle--white {
+    color: #fff;
+}
+
+.section__form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.section__wrapper-input {
+    position: relative;
+    margin-right: 10px;
+
+
+}
+
+.section__wrapper-input.section__wrapper-input--user::before {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    content: "";
+    width: 15px;
+    height: 15px;   
+    background-image: url(../img/section-boost/icons/user-solid.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.section__wrapper-input.section__wrapper-input--mail::before {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    content: "";
+    width: 15px;
+    height: 15px;   
+    background-image: url(../img/section-boost/icons/envelope-solid.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.section__wrapper-input.section__wrapper-input--phone::before {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    content: "";
+    width: 15px;
+    height: 15px;   
+    background-image: url(../img/section-boost/icons/phone-solid.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+//
+.input {
+    width: 280px;
+    height: 46px;
+    padding: 0 45px;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+
+    &::placeholder {
+        font-size: 13px;
+        font-family: 'Open Sans', sans-serif;
+        color: rgb(169, 169, 169);
+        line-height: 1.2;
+    }
+
+    &:focus {
+        outline-color: rgb(56, 56, 99);
+    }
+}
+
+.input.input--newsletter-name {
+    width: 310px;
+    border: 1px solid rgb(203, 203, 203);
+    border-radius: 2px;
+}  
+.input.input--newsletter-mail {
+    width: 390px;
+    border: 1px solid rgb(203, 203, 203);
+    border-radius: 2px;
+}
+
+.input-submit {
+    width: 210px;
+    height: 46px;
+    padding: 0 45px;
+    border: none;
+    background-color: rgb(255, 187, 66);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+
+    &:hover {
+        background-color: darken(rgb(255, 187, 66), 10%);
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
